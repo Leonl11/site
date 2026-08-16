@@ -10,7 +10,8 @@ export default function MobileSticky({ onOpenBooking }) {
           href="https://t.me/leonlen11"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 py-3 px-3 rounded-xl bg-cinema-900 border border-white/10 text-cinema-200 flex items-center justify-center gap-2 text-xs font-medium active:scale-95 transition-transform"
+          className="flex-1 min-h-[44px] py-3 px-3 rounded-xl bg-cinema-900 border border-white/10 text-cinema-200 flex items-center justify-center gap-2 text-xs font-medium active:scale-95 transition-transform focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none"
+          aria-label="Написати фотографу в Telegram"
         >
           <TelegramIcon className="w-4 h-4 text-gold-400" />
           <span>Telegram</span>
@@ -20,15 +21,15 @@ export default function MobileSticky({ onOpenBooking }) {
           href="https://instagram.com/onlyhotphoto.che"
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 py-3 rounded-xl bg-cinema-900 border border-white/10 text-cinema-200 flex items-center justify-center active:scale-95 transition-transform"
-          aria-label="Instagram @onlyhotphoto.che"
+          className="w-12 min-h-[44px] py-3 rounded-xl bg-cinema-900 border border-white/10 text-cinema-200 flex items-center justify-center active:scale-95 transition-transform focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none"
+          aria-label="Instagram фотографа @onlyhotphoto.che"
         >
           <InstagramIcon className="w-4 h-4 text-gold-400" />
         </a>
 
         <button
           onClick={onOpenBooking}
-          className="flex-1 py-3 px-3 rounded-xl bg-gold-500 text-cinema-950 flex items-center justify-center gap-1.5 text-xs font-semibold uppercase tracking-wider shadow-md shadow-gold-500/20 active:scale-95 transition-transform"
+          className="flex-1 min-h-[44px] py-3 px-3 rounded-xl bg-gold-500 text-cinema-950 flex items-center justify-center gap-1.5 text-xs font-semibold uppercase tracking-wider shadow-md shadow-gold-500/20 active:scale-95 transition-transform focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none"
         >
           <Sparkles className="w-3.5 h-3.5" />
           <span>Запис</span>

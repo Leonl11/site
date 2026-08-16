@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, HeartHandshake, Home, Sparkles, Lock, EyeOff, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, HeartHandshake, Home, Sparkles, Lock, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function TrustSection() {

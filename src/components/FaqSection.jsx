@@ -38,9 +38,11 @@ export default function FaqSection() {
               }`}
             >
               <button
+                id={`faq-question-${item.id}`}
                 onClick={() => toggleItem(index)}
-                className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 focus:outline-none"
+                className="w-full p-5 sm:p-6 min-h-[56px] text-left flex items-center justify-between gap-4 focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:ring-inset focus-visible:outline-none rounded-2xl transition-colors"
                 aria-expanded={isOpen}
+                aria-controls={`faq-answer-${item.id}`}
               >
                 <span className="font-serif text-lg sm:text-xl text-cinema-100 font-normal">
                   {item.question}
@@ -57,6 +59,9 @@ export default function FaqSection() {
               <AnimatePresence initial={false}>
                 {isOpen && (
                   <motion.div
+                    id={`faq-answer-${item.id}`}
+                    role="region"
+                    aria-labelledby={`faq-question-${item.id}`}
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}

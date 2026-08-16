@@ -29,7 +29,7 @@ export default function ContactFooter({ onOpenBooking }) {
               href="https://t.me/leonlen11"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 rounded-full bg-gold-500 hover:bg-gold-400 text-cinema-950 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2.5 shadow-[0_0_25px_rgba(205,168,81,0.3)] hover:shadow-[0_0_35px_rgba(205,168,81,0.5)] active:scale-[0.98]"
+              className="w-full sm:w-auto px-8 py-4 min-h-[48px] rounded-full bg-gold-500 hover:bg-gold-400 text-cinema-950 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2.5 shadow-[0_0_25px_rgba(205,168,81,0.3)] hover:shadow-[0_0_35px_rgba(205,168,81,0.5)] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none"
             >
               <TelegramIcon className="w-4 h-4" />
               <span>Telegram: @leonlen11</span>
@@ -39,7 +39,7 @@ export default function ContactFooter({ onOpenBooking }) {
               href="https://instagram.com/onlyhotphoto.che"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 hover:border-gold-400 bg-cinema-900/60 hover:bg-cinema-900 text-cinema-200 hover:text-gold-300 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2.5 active:scale-[0.98]"
+              className="w-full sm:w-auto px-8 py-4 min-h-[48px] rounded-full border border-white/20 hover:border-gold-400 bg-cinema-900/60 hover:bg-cinema-900 text-cinema-200 hover:text-gold-300 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2.5 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none"
             >
               <InstagramIcon className="w-4 h-4 text-gold-400" />
               <span>Instagram: @onlyhotphoto.che</span>
@@ -59,9 +59,9 @@ export default function ContactFooter({ onOpenBooking }) {
             <span>Чернігів, Україна · Зйомки в студіях та на природі</span>
           </div>
 
-          <div className="flex items-center gap-1.5 text-cinema-500">
+          <div className="flex items-center gap-1.5 text-cinema-400">
             <span>Зроблено з любов'ю до естетики тіла</span>
-            <Heart className="w-3 h-3 text-gold-400 fill-gold-400/40" />
+            <Heart className="w-3.5 h-3.5 text-gold-400 fill-gold-400/40" />
           </div>
         </div>
       </div>
