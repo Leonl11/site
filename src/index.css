@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-spotlight-x: 50%;
+    --bg-spotlight-y: 50%;
+  }
+
+  body {
+    background-color: #070709;
+    color: #f4f4f7;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070709;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2c2c3a;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cda851;
+  }
+}
+
+/* Film Grain Texture Effect */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Subtle Vignette */
+.cinematic-vignette {
+  background: radial-gradient(circle at 50% 50%, rgba(7, 7, 9, 0) 40%, rgba(7, 7, 9, 0.85) 100%);
+}
+
+/* Ambient glow */
+.ambient-glow {
+  background: radial-gradient(600px circle at var(--bg-spotlight-x, 50%) var(--bg-spotlight-y, 50%), rgba(205, 168, 81, 0.04), transparent 80%);
+}
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(14, 14, 18, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(20, 20, 26, 0.85);
+  border-color: rgba(205, 168, 81, 0.3);
+}
+
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
