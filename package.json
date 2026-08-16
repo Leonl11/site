@@ -5,11 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:enhanced": "vite enhanced",
     "build": "vite build",
-    "build:enhanced": "vite build enhanced",
-    "preview": "vite preview",
-    "preview:enhanced": "vite preview enhanced"
+    "preview": "vite preview"
   },
   "dependencies": {
     "clsx": "^2.1.1",

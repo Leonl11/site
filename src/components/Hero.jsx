@@ -28,7 +28,7 @@ export default function Hero({ onOpenBooking }) {
           className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-gold-500/30 bg-cinema-900/60 backdrop-blur-md mb-6"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse" />
-          <span className="text-[11px] font-sans tracking-[0.2em] uppercase text-gold-300">
+          <span className="text-xs font-sans tracking-[0.2em] uppercase text-gold-300">
             Художня та Ню Фотографія · Чернігів
           </span>
         </motion.div>
@@ -64,14 +64,14 @@ export default function Hero({ onOpenBooking }) {
         >
           <a
             href="#gallery"
-            className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gold-500 hover:bg-gold-400 text-cinema-950 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 shadow-[0_0_25px_rgba(205,168,81,0.25)] hover:shadow-[0_0_35px_rgba(205,168,81,0.45)] active:scale-[0.98] text-center"
+            className="w-full sm:w-auto px-7 py-3.5 min-h-[44px] rounded-full bg-gold-500 hover:bg-gold-400 text-cinema-950 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 shadow-[0_0_25px_rgba(205,168,81,0.25)] hover:shadow-[0_0_35px_rgba(205,168,81,0.45)] active:scale-[0.98] text-center flex items-center justify-center focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none"
           >
-            Переглянути галерею
+            <span>Переглянути галерею</span>
           </a>
 
           <button
             onClick={onOpenBooking}
-            className="w-full sm:w-auto px-6 py-3.5 rounded-full border border-white/20 hover:border-gold-400/60 bg-cinema-900/50 hover:bg-cinema-900/80 backdrop-blur-sm text-cinema-200 hover:text-gold-300 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2 active:scale-[0.98]"
+            className="w-full sm:w-auto px-6 py-3.5 min-h-[44px] rounded-full border border-white/20 hover:border-gold-400/60 bg-cinema-900/50 hover:bg-cinema-900/80 backdrop-blur-sm text-cinema-200 hover:text-gold-300 font-medium text-xs sm:text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none"
           >
             <Send className="w-4 h-4 text-gold-400" />
             <span>Написати в Telegram</span>
@@ -85,29 +85,29 @@ export default function Hero({ onOpenBooking }) {
           transition={{ duration: 1, delay: 1 }}
           className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-2xl border-t border-white/5 pt-8"
         >
-          <div className="flex items-center justify-center gap-2 text-xs text-cinema-300/80 py-1">
+          <div className="flex items-center justify-center gap-2 text-xs text-cinema-300 py-1">
             <ShieldCheck className="w-4 h-4 text-gold-400 flex-shrink-0" />
             <span>100% Конфіденційність</span>
           </div>
-          <div className="flex items-center justify-center gap-2 text-xs text-cinema-300/80 py-1">
+          <div className="flex items-center justify-center gap-2 text-xs text-cinema-300 py-1">
             <Heart className="w-4 h-4 text-gold-400 flex-shrink-0" />
             <span>Допомога з позуванням</span>
           </div>
-          <div className="flex items-center justify-center gap-2 text-xs text-cinema-300/80 py-1">
+          <div className="flex items-center justify-center gap-2 text-xs text-cinema-300 py-1">
             <Sparkles className="w-4 h-4 text-gold-400 flex-shrink-0" />
             <span>Затишні студії та природа</span>
           </div>
         </motion.div>
       </div>
 
-      {/* Scroll Down Indicator */}
+      {/* Scroll Down Indicator with subtle pulse and 44px tap target */}
       <a
         href="#gallery"
-        aria-label="Прокрутити до галереї"
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 text-cinema-400 hover:text-gold-400 transition-colors p-2 animate-bounce flex flex-col items-center gap-1"
+        aria-label="Прокрутити до галереї робіт"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 min-w-[44px] min-h-[44px] text-cinema-300 hover:text-gold-300 transition-colors flex flex-col items-center justify-center gap-1.5 focus-visible:ring-2 focus-visible:ring-gold-400 focus-visible:outline-none rounded-lg p-2"
       >
-        <span className="text-[9px] uppercase tracking-[0.25em] text-cinema-500">Гортати</span>
-        <ArrowDown className="w-3.5 h-3.5" />
+        <span className="text-xs uppercase tracking-[0.2em] text-cinema-400 font-sans">Гортати</span>
+        <ArrowDown className="w-3.5 h-3.5 text-gold-400 animate-pulse-subtle" />
       </a>
     </section>
   );

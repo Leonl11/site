@@ -45,7 +45,7 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-cinema-950 text-cinema-100 font-sans selection:bg-gold-500/30 selection:text-gold-300">
       {/* Background Subtle Ambient Light & Noise */}
-      <div className="fixed inset-0 pointer-events-none ambient-glow z-0 opacity-60" />
+      <div className="fixed inset-0 pointer-events-none ambient-glow z-0 opacity-70" />
       <div className="fixed inset-0 pointer-events-none bg-grain z-0" />
 
       {/* Main Page Layout */}

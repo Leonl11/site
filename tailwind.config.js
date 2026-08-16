@@ -9,8 +9,7 @@ export default {
     extend: {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Manrope"', 'system-ui', 'sans-serif'],
       },
       colors: {
         cinema: {
@@ -39,14 +38,19 @@ export default {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       },
       animation: {
-        'pulse-subtle': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
+        'pulse-subtle': 'pulse 3.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 5s ease-in-out infinite',
+        'shimmer': 'shimmer 2s infinite linear',
       },
       keyframes: {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-6px)' },
-        }
+          '50%': { transform: 'translateY(-5px)' },
+        },
+        shimmer: {
+          '0%': { backgroundPosition: '-200% 0' },
+          '100%': { backgroundPosition: '200% 0' },
+        },
       }
     },
   },
