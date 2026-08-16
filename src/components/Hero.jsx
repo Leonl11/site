@@ -3,12 +3,15 @@ import { ArrowDown, Send, ShieldCheck, Heart, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Hero({ onOpenBooking }) {
+  const baseUrl = import.meta.env.BASE_URL || '/';
+  const heroImage = `${baseUrl.endsWith('/') ? baseUrl : baseUrl + '/'}images/hero.jpg`;
+
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Background cinematic photograph with vignette */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
-          src="/images/hero.jpg"
+          src={heroImage}
           alt="Художня фотографія Чернігів"
           className="w-full h-full object-cover object-center scale-105 filter brightness-[0.4] contrast-[1.1] transition-transform duration-1000 ease-out"
         />
